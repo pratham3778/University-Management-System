@@ -1,0 +1,5 @@
+create database usm;
+use usm;
+create table login(username varchar(30), password varchar(30));
+select * from login;
+insert into login values('pratham','******');
