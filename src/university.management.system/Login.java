@@ -1,9 +1,6 @@
-package university.management.system;
-
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.ResultSet;
 
 public class Login extends JFrame implements ActionListener {
 
@@ -51,7 +48,7 @@ public class Login extends JFrame implements ActionListener {
         img.setBounds(350,20,200,200);
         add(img);
 
-        ImageIcon i11 = new ImageIcon(ClassLoader.getSystemResource("icon/loginback.png"));
+        ImageIcon i11 = new ImageIcon(ClassLoader.getSystemResource("icon/loginback.jpg"));
         Image i22 = i11.getImage().getScaledInstance(600,300,Image.SCALE_DEFAULT);
         ImageIcon i33 = new ImageIcon(i22);
         JLabel img1 = new JLabel(i33);
@@ -67,7 +64,25 @@ public class Login extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == login) {
+            String username = textFieldName.getText();
+            String password = passwordField.getText();
 
+            String query = "select * from login where username='"+username+"' and password = '"+password+"'";
+            try {
+                Conn c = new Conn();
+                ResultSet resultSet = c.statement.executeQuery(query);
+                if (resultSet.next()) {
+                    setVisible(false);
+                    //next class
+                    new main_class();
+
+                } else {
+                    JOptionPane.showMessageDialog(null,"Invalid username or password");
+                }
+
+            } catch (Exception E) {
+                E.printStackTrace();
+            }
         } else {
             setVisible(false);
         }
