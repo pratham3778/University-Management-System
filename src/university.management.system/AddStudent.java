@@ -22,7 +22,7 @@ public class AddStudent extends JFrame implements ActionListener {
     AddStudent() {
         getContentPane().setBackground(new Color(128,176,255));
 
-        JLabel heading = new JLabel("New Teacher Deatils");
+        JLabel heading = new JLabel("New Student Deatils");
         heading.setBounds(310,30,500,50);
         heading.setFont(new Font("serif",Font.BOLD,30));
         add(heading);
