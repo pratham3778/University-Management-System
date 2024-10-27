@@ -7,3 +7,5 @@ Technologies Used: Core Java (Swing & AWT)
 Database Used: MySQL
 
 IDE used: Intellij idea
+
+--------- Still wokring on the project not finished --------- 
