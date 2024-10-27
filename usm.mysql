@@ -12,3 +12,6 @@ select * from teacher;
 -- add student and to check if added successfully
 create table student(name varchar(40),fname varchar(40),rollno varchar(40),dob varchar(40),address varchar(40), phone varchar(40), email varchar(40), class_X varchar(40), class_XII varchar(40), aadhaar varchar(40), course varchar(40), branch varchar(40));
 select * from student;
+-- student leave 
+create table studentleave(rollno varchar(20),date varchar(20), time varchar(20));
+select * from studentleave;
