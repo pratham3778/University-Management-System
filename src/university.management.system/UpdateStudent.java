@@ -18,7 +18,7 @@ public class UpdateStudent extends JFrame implements ActionListener {
     UpdateStudent() {
         getContentPane().setBackground(new Color(230,210,252));
 
-        JLabel heading = new JLabel("Update Student Deatils");
+        JLabel heading = new JLabel("Update Student Details");
         heading.setBounds(50,10,500,50);
         heading.setFont(new Font("serif",Font.BOLD,35));
         add(heading);
@@ -249,3 +249,4 @@ public class UpdateStudent extends JFrame implements ActionListener {
         new UpdateStudent();
     }
 }
+
