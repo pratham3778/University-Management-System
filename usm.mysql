@@ -28,3 +28,16 @@ select * from subject;
 -- show marks table
 create table marks(rollno varchar(20), semester varchar(20), mrk1 varchar(50), mrk2 varchar(50), mrk3 varchar(50), mrk4 varchar(50), mrk5 varchar(50));
 select * from marks;
+
+-- fee table
+create table fee(course varchar(20), semester1 varchar(20), semester2 varchar(20), semester3 varchar(20), semester4 varchar(20), semester5 varchar(20), semester6 varchar(20), semester7 varchar(20), semester8 varchar(20));
+select * from fee;
+insert into fee values("BE", "48000", "43000", "43000", "43000", "43000", "43000", "43000", "43000");
+insert into fee values("BTech", "40000", "35000", "35000", "35000", "35000", "35000", "35000", "35000");
+insert into fee values("BSC", "39000", "34000", "34000", "34000", "34000", "34000", "34000", "34000");
+insert into fee values("BBA", "70000", "60000", "60000", "60000", "60000", "60000", "60000", "60000");
+insert into fee values("BCA", "44000", "45000", "45000", "45000", "45000", "45000", "45000", "45000");
+
+-- college fee
+create table feecollege(rollno varchar(20), course varchar(20), branch varchar(20), semester varchar(20), total varchar(20));
+select * from feecollege;
