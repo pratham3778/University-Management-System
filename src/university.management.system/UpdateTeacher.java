@@ -1,6 +1,5 @@
 package university.management.system;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -20,7 +19,7 @@ public class UpdateTeacher extends JFrame implements ActionListener {
 
         getContentPane().setBackground(new Color(230,210,252));
 
-        JLabel heading = new JLabel("Update Teacher Deatils");
+        JLabel heading = new JLabel("Update Faculty Details");
         heading.setBounds(50,10,500,50);
         heading.setFont(new Font("serif",Font.BOLD,35));
         add(heading);
